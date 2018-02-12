@@ -60,24 +60,25 @@ Add the following line to your controller
 
 use Blockchain
 ```
+
 ## 1. GET RATES
 ```php
 Blockahain::getRates();
 ```
 
-```
-## 2. GET RATES
+
+## 2. CONVERT A CURRENCY VALUE TO BTC
 ```php
 $rates = Blockahain::convertCurrencyToBTC('NGN'  600000);
 ```
 
-```
-## 3. GET RATES
+
+## 3. GET STATISTICS CHAT
 ```php
 $rates = Blockahain::getStats();
 ```
 
-```
+
 ## 4. CREATE WALLET
 ```php
 $wallet = Blockahain::createWallet($wallet_password);
@@ -103,7 +104,7 @@ $wallet = Blockahain::createNewAddress($wallet_guid, $wallet_password, $label ='
 ```
 
 ## Credit 
-Readme document was inpsired and tuned from on of @Unicodedeveloper. Prosper Otemuyiwa.
+Readme document was inpsired and tuned from one of @Unicodedeveloper. Prosper Otemuyiwa.
 
 ## Contributing
 
