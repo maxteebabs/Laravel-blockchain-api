@@ -21,6 +21,6 @@ class Blockchain extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'blockchain';
+        return 'laravel-blockchain';
     }
 }

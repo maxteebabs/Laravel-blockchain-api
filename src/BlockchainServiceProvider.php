@@ -33,7 +33,7 @@ class BlockchainServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('blockchain', function() {
+        $this->app->bind('laravel-blockchain', function() {
             return new Blockchain;
         });
     }
@@ -43,6 +43,6 @@ class BlockchainServiceProvider extends ServiceProvider
     */
     public function provides()
     {
-        return ['blockchain'];
+        return ['laravel-blockchain'];
     }
 }

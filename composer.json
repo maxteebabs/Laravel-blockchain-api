@@ -17,5 +17,20 @@
    },
    "require-dev": {
         "phpunit/phpunit" : "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+          "Maxtee\\Blockchain\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Maxtee\\Blockchain\\BlockchainServiceProvider"
+            ],
+            "aliases": {
+                "Paystack": "Maxtee\\Blockchain\\Facades\\Blockchain"
+            }
+        }
     }
 }
