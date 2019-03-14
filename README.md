@@ -63,44 +63,44 @@ use Blockchain
 
 ## 1. GET RATES
 ```php
-Blockahain::getRates();
+Blockchain::getRates();
 ```
 
 
 ## 2. CONVERT A CURRENCY VALUE TO BTC
 ```php
-$rates = Blockahain::convertCurrencyToBTC('NGN'  600000);
+$rates = Blockchain::convertCurrencyToBTC('NGN'  600000);
 ```
 
 
 ## 3. GET STATISTICS CHART
 ```php
-$rates = Blockahain::getStats();
+$rates = Blockchain::getStats();
 ```
 
 
 ## 4. CREATE WALLET
 ```php
-$wallet = Blockahain::createWallet($wallet_password);
+$wallet = Blockchain::createWallet($wallet_password);
 ```
 
 ## 5. WALLET BALANCE
 ```php
-$wallet = Blockahain::getWalletBalance($wallet_guid, $wallet_password);
+$wallet = Blockchain::getWalletBalance($wallet_guid, $wallet_password);
 ```
 
 ## 6. Making Outgoing Payment
 ```php
-$wallet = Blockahain::makeOutgoingPayment($wallet_guid, $amount, $wallet_password, $to_guid);
+$wallet = Blockchain::makeOutgoingPayment($wallet_guid, $amount, $wallet_password, $to_guid);
 ```
 ## 7. List Address
 ```php
-$wallet = Blockahain::listAddress($wallet_guid, $wallet_password);
+$wallet = Blockchain::listAddress($wallet_guid, $wallet_password);
 ```
 
 ## 8. Create New Address
 ```php
-$wallet = Blockahain::createNewAddress($wallet_guid, $wallet_password, $label ='');
+$wallet = Blockchain::createNewAddress($wallet_guid, $wallet_password, $label ='');
 ```
 
 ## Credit 
